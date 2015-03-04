@@ -1,3 +1,8 @@
+##Custom Preface
+Hi! Thank you for taking the time to evaluate my submission! :)
+I have created another document that showcases the plots that I made.
+You can find it [here](INTRO.md).
+
 ## Introduction
 
 This assignment uses data from
