@@ -13,10 +13,6 @@ dates <- strptime(paste(realData[,1], realData[,2]), format = "%d/%m/%Y %H:%M:%S
 #Create a 'png' graphics device, specifying the filename and image dimensions
 png(filename = "plot3.png", width = 480, height = 480)
 
-#plot(dates, realData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
-#lines(dates, realData$Sub_metering_2, col = "red")
-#lines(dates, realData$Sub_metering_3, col = "blue")
-
 #Plot the first data series to create the base plot, specifying the y-axis label.
 #type = "l" plots lines instead of points
 plot(dates, realData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
