@@ -1,3 +1,9 @@
+#The first 20 lines are exactly the same (except for the filename)
+#for the four plot scripts, so that each script can be executed independently.
+#Their purpose is to read just the relevant lines from the data file into
+# an R data.frame.
+#Because of its size, the Data file is not included in the repository
+
 #The Data file is assumed to be in the parent directory of this file.
 fileLoc <- "../household_power_consumption.txt"
 #Read only the first line, just to get the header information
@@ -12,6 +18,7 @@ dates <- strptime(paste(realData[,1], realData[,2]), format = "%d/%m/%Y %H:%M:%S
 
 #Create a 'png' graphics device, specifying the filename and image dimensions
 png(filename = "plot4.png", width = 480, height = 480)
+
 #Setup the device to accept 4 plots in a two by two matrix, filling rows first.
 par(mfrow = c(2, 2))
 
