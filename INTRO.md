@@ -1,4 +1,7 @@
+This document showcases the plots that I made as a solution to the assignment.
+
 ### My Plot 1
+Code can be found [here](plot1.R)
 
 
 ![plot1](plot1.png) 
