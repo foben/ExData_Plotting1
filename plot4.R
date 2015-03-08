@@ -29,7 +29,11 @@ plot(dates, realData$Global_active_power, type = "l", xlab = "", ylab = "Global 
 plot(dates, realData$Voltage, type = "l", xlab = "", ylab = "Voltage")
 
 #Draw the third plot, analogues to plot3.R
-plot(dates, realData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
+plot(dates, realData$Sub_metering_1,
+     type = "l",
+     xlab = "",
+     ylab = "Energy sub metering"
+     )
 lines(dates, realData$Sub_metering_2, col = "red")
 lines(dates, realData$Sub_metering_3, col = "blue")
 legend("topright",
@@ -39,7 +43,12 @@ legend("topright",
 )
 
 #Draw the fourth plot, similar to plot2.R but with a different variable
-plot(dates, realData$Global_reactive_power, type = "l", xlab = "", ylab = "Global_reactive_power")
+plot(dates,
+     realData$Global_reactive_power,
+     type = "l",
+     xlab = "",
+     ylab = "Global_reactive_power"
+     )
 
 #Close the file device
 dev.off()

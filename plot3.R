@@ -21,7 +21,12 @@ png(filename = "plot3.png", width = 480, height = 480)
 
 #Plot the first data series to create the base plot, specifying the y-axis label.
 #type = "l" plots lines instead of points
-plot(dates, realData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
+plot(dates,
+     realData$Sub_metering_1,
+     type = "l",
+     xlab = "",
+     ylab = "Energy sub metering"
+     )
 
 #Add the two other data series as lines to the plot
 lines(dates, realData$Sub_metering_2, col = "red")

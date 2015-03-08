@@ -19,7 +19,14 @@ dates <- strptime(paste(realData[,1], realData[,2]), format = "%d/%m/%Y %H:%M:%S
 #Create a 'png' graphics device, specifying the filename and image dimensions
 png(filename = "plot2.png", width = 480, height = 480)
 
-plot(dates, realData$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+#Draw the plot, which is a line plot (type = "l")
+#of the Global Active Power variable with a custom ylab label.
+plot(dates, realData$Global_active_power,
+     type = "l",
+     xlab = "",
+     ylab = "Global Active Power (kilowatts)"
+     )
+
 #Close the file device
 dev.off()
 

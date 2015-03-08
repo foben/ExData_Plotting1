@@ -19,7 +19,15 @@ dates <- strptime(paste(realData[,1], realData[,2]), format = "%d/%m/%Y %H:%M:%S
 #Create a 'png' graphics device, specifying the filename and image dimensions
 png(filename = "plot1.png", width = 480, height = 480)
 
-hist(realData$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+#Draw the plot, which is a histogram plot of the Global Active Power variable.
+#It uses the default bin count,
+#red as the color for the bars and custom 'main' and 'xlab' labels.
+hist(realData$Global_active_power,
+     col = "red",
+     main = "Global Active Power",
+     xlab = "Global Active Power (kilowatts)"
+     )
+
 #Close the file device
 dev.off()
 
